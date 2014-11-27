@@ -49,8 +49,8 @@ con = array([1, 1, 0, 0])
 inter = array([1, 0, 0, 1])
 
 print 'Constitutional Challenge Success'
-print supp.predict(con)
-print rf.predict(con)
+print supp.predict(con)  # Predicts failure
+print rf.predict(con)  # Predicts success
 
-print supp.predict(inter)
-print rf.predict(inter)
+print supp.predict(inter)  # Predicts failure
+print rf.predict(inter)  # Predicts failure
